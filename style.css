@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+            }
+
+form {            
+    width: 100%;
+    margin: auto;
+    border-left: 2px solid #FAF5E4;
+    border-right: 2px solid #FAF5E4;
+    background-color: #ffffff;
+    padding: 20px;
+}
+h1 {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 25px 10px;
+    
+}
+h3 {
+    margin:20px 0;
+
+}
+.header {
+    background-color: #2C786C;
+}
+input {
+    display: block;
+    padding: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+select {
+    padding: 7px;
+}
+input:focus{
+    outline: none;
+}
+label{
+    margin-bottom: 5px;
+    
+}
+
+#info .name:nth-child(2){
+  margin-right: 20px;
+}
+
+.fathername {
+    clear: left;
+}
+
+.foto input{
+    background-color: #F8B400;
+    
+
+
+}
+
+
+
+label{
+    font-size: 14px;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+#gender, .dateborn {
+    display: block;
+    width: 100%;
+    max-width: 225px;
+    float: left;         
+   }
+
+#gender {
+   margin-top: 28px;
+   margin-left: 50px;
+   }
+
+.new{
+    float: left;
+    max-width: 225px;
+    width: 100%;            
+    clear: both;
+    
+
+}
+
+.foto {
+    float: right;
+}
+
+
+#add {
+    background-color: #F8B400;
+
+}
+#footer {
+    background-color: #004445;
+
+}
+#footer h4 {
+    padding:20px;
+    text-align: center;
+    color: #FAF5E4;
+}
+
+
+/* edu start */
+/* 
+.edu_date input {
+    display: inline-block;
+     max-width: 200px;
+     margin: 5px;
+}
+.edu_date label {
+    display: inline;
+     max-width: 200px;
+    
+}
+
+.edu_date div{
+    float: left;
+}
+.edu_date::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #highschool{
+      width: 100%;
+      max-width: 500px;
+
+      
+  }
+  #profession{
+      float: left;
+  } */
+input, select{
+    border: 1px solid #F8B400;
+    height: 40px;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+select {
+    max-width: 225px;
+    width: 100%;
+}
+select:first-of-type{
+    margin-right: 50px;
+}
+::placeholder {
+    color: #2C786C;
+}
+
+label {
+    color: #2C786C;
+    font-style: italic;
+}
+:optional {
+    color:#2C786C;
+}
+select , input {
+    outline: none;
+    cursor: pointer;
+}
+.edu_date input {
+    margin-bottom: 3px;
+}
+
+
+
+
+h2,h3,h4 ,p {
+    color:#004445 ;
+}
+
+  #school {
+      float: left;
+      padding: 0 10px;
+      display: inline-block;
+      height: 50px;
+      border-radius: 10px;
+      border:1px solid #F8B400
+    }
+  .edu_date{
+      float: left ;
+  }
+  .edu_date div{ display: inline-block;}
+.edu_date + div {
+    margin-right: 50px;
+}
+  #eduWorkForm .edu_date {
+      margin-left: 50px;
+  }
+  #eduWorkForm .edu_date:first-of-type{
+      margin-right: 50px;
+  }
+
+  .school::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  
+  .uni_date {
+      max-width: 200px;
+      width: 100%;
+      position: relative;
+      
+  }
+
+  .startdate {
+      float: left;
+      margin-top: 20px;
+  }
+  .enddate {
+ float: left;
+  }
+
+  .uni_date input {
+      
+      display: inline;
+  }
+
+  .uni_date::after {
+    content: "";
+    clear: both;
+    display: table;
+
+
+  }
+  #uniAdd{
+     position: absolute;
+     width: 50px;
+          top: 120px;
+     left: 450px;
+     cursor: pointer;
+     
+  }
+  
+  #uniAdd::after{
+    content: "";
+    clear: both;
+    display: table; 
+  }
+  .office input {
+      display: inline;
+      width: 20px;
+      height: 20px;
+  }
+  .office label {
+     font-size: 16px;
+     padding: 0 10px;
+     font-weight: 900;
+  }
+  #print {
+      padding:20px 50px;
+      
+  }
+input[type=radio]{
+    width: 10px;
+    margin:0 20px;
+}
+td {
+    padding: 0 20px;
+}
+
+nav{
+    float: right;
+
+}
+li {
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.header h1{
+    display: inline-block;
+    max-width: 250px;
+    width: 100%;
+}
+nav{
+    height: 50px;
+    padding: 30px;
+}
+nav li a {
+   color: #ffffff;
+   text-decoration: none;
+}
+#cv,  #eduWork {
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+.start{
+    position:fixed; 
+    bottom: 10px; 
+    right: 20px;
+    background-color: #2C786C;
+    padding: 20px;
+     
+}
+
+.start a {
+    color: #ffffff;
+    transform: rotate(-90deg); 
+    display: block;
+    font-weight: 900;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+#addinfo, #work {
+ padding: 50px 0;
+}
+
+       #info::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#add {
+    max-width:200px;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+#add:hover{
+
+}
