@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>დაამატე რეზიუმე</h1>
+            <nav>
+                <ul>
+                    <li><a href="#cv">პირადი ინფორმაცია</a></li>
+                    
+                    <li><a href="#eduWork">განათლება</a></li>
+                    <li><a href="#work">სამუშაო გამოცდილება</a></li>
+                    <li><a href="#addinfo">დამატებითი ინფორმაცია</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>    
+    <div class="container" id="cv" >        
+        <form >
+            <div class="foto">
+                <label for="avatar">ატვირთე პროფილის ფოტო:</label>
+                <input type="file"
+                       id="avatar" name="avatar"
+                       accept="image/png, image/jpeg">                
+            </div>
+            <div id="info">
+                <h3>პერსონალური ინფორმაცია</h3>                                
+                    <input type="text" id="fname" placeholder="სახელი" name="perinfo" minlength="4" maxlength="10" size="20" required>                     
+                    <input type="text" id="lastName" name="perinfo"  placeholder="გვარი" minlength="4" maxlength="25" size="20" required>
+                    <input type="text" id="fatherName" name="perinfo"  placeholder="მამის სახელი" minlength="4" maxlength="25" size="20" required>
+                    <input type="number" id="pnumber" name="perinfo"  placeholder="პირადი ნომერი" minlength="11" maxlength="11" size="20" required>
+
+                    <div class="dateborn">
+                        <label for="bornDate">დაბადების თარიღი</label>
+                        <input type="date" id="bornDate" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
+                    </div>
+                    <select id="gender" name="gender" >
+                        <option value="" disabled selected>აირჩიე სქესი</option>
+                        <option value="1">მდედრობითი</option>
+                        <option value="2">მამრობითი</option>
+                    </select>                 
+            </div>             
+            <section id="contact">
+                <div>           
+                    <h3>საკონტაქტო ინფორმაცია</h3>                          
+                    <input type="text" id="addres" placeholder="იურდიული მისამართი" name="contact" minlength="4" maxlength="50" size="20" required>                     
+                    <input type="text" id="addres" placeholder=" ფაქტობრივი მისამართი" name="contact" minlength="4" maxlength="50" size="20" >  
+                    <input type="tel" id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required placeholder=" მობილური: 598-11-07-61"> 
+                    <input type="email" id="email"  pattern=".+@globex\.com" size="30" required placeholder="ელ.ფოსტა">
+                 </div> 
+                 <input type="submit" id="add" value="დამატება"> 
+            </section>        
+       </form>
+        <section id="eduWork">
+            <form id="eduWorkForm">
+                <h3>განათლება</h3>
+                <div  class="school">           
+                <input type="text" id="school" placeholder="სკოლის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required>
+                <div class="edu_date">
+                    <div style="margin-right: 30px;" >
+                        
+                        <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
+                        <label for="bornDate">დაწყების თარიღი</label>
+                    </div>
+                    <div >
+                        
+                        <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
+                        <label for="bornDate">დასრულების თარიღი</label>
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="highSchool" placeholder="უნივერისტეტის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required>
+               
+             
+                <input type="text" id="highSchool" placeholder="ფაკულტეტის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required> 
+                <select id="country" name="country" >
+                    <option value="" disabled selected>აირჩიეთ ქვეყანა</option>
+                    <option value="1">საქართველო</option>
+                    <option value="2">ინგლისი</option>
+                    <option value="3">ამერიკა</option>
+                    <option value="4">გერმანია</option>
+                    <option value="5">იტალია</option>
+                    <option value="6">უკრაინა</option>
+                    <option value="7">ეგვიპტე</option>
+                    <option value="8">იაპონია</option>
+                </select>
+                <select id="profession" name=" profession" >
+                    <option value="" disabled selected>აირჩიეთ პროფესია</option>
+                    <option value="1">ინფორმაციული ტექნოლოგიები</option>
+                    <option value="2">მათემატიკა</option>
+                    <option value="3">ფილოლოგია</option>
+                    <option value="4">ფსიქოლოგია</option>
+                    <option value="5">ბიოლოგიური</option>
+                    <option value="6">ეკონომიკა</option>
+                    <option value="7">იურდიული</option>
+                    <option value="8">გელოგია</option>
+                </select>     
+               
+               <div class="uni_date" >
+                   <div class="startdate" >
+                    <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01" >   
+                    <label for="bornDate">დაწყების თარიღი</label>
+                   </div>
+                   <div class="enddate">
+                    <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
+                    <label for="bornDate">დასრულების თარიღი</label>  
+                   </div>          
+                    <input type="submit" value="+" id="uniAdd" title="დაამატე შემდგომი უნივერსიტეტი">
+               </div>             
+               <input type="submit" id="add" value="დამატება" style="margin-top: 30px;">                
+            </form>         
+    
+        </section>
+        <section  id="work">
+            <h3>სამუშაო გამოცდილება</h3>
+            <form action="#">
+                <input type="text" name="" id="" placeholder="დაწესებულება" name="work" minlength="4" maxlength="500" size="20" required>
+                <input type="text" name="" id="" placeholder="დაკავებული თანამდებობა" name="work" minlength="4" maxlength="500" size="20" required>
+                <div class="uni_date" >
+                    <div class="startdate" >
+                     <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01" >   
+                     <label for="bornDate">დაწყების თარიღი</label> 
+                    </div>
+                    <div class="enddate">
+                     <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
+                     <label for="bornDate">დასრულების თარიღი</label>  
+                     </div>        
+                    <input type="submit" value="+" id="uniAdd" title="დაამატე შემდგომი სამსახური">
+                </div>
+                <input type="submit" id="add" value="დამატება" style="margin-top: 30px;">  
+            </form>
+        </section>
+        <section id="addinfo">
+            <h3>კომპიუტერული პროგრამები</h3>
+            <div class="office">
+                <label for="scales">Word </label><input type="checkbox" id="word" name="scales">
+                <label for="scales">Excel</label><input type="checkbox" id="excel" name="scales">
+                <label for="scales">PowerPoint</label><input type="checkbox" id="power" name="scales">
+            </div>
+            
+            <h3>
+                უცხო ენა 
+            </h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>ინგლისური </td>
+                        <td>კარგი<input type="radio"  name="ing"></td>
+                        <td>საშუალო<input type="radio"  name="ing"></td>
+                    </tr>
+                    <tr>
+                        <td>რუსული</td>
+                        <td>კარგი<input type="radio" name="rus"></td>
+                        <td>საშუალო<input type="radio"  name="rus"></td>
+                    </tr>
+                    <tr>
+                        <td>გერმანული</td>
+                        <td>კარგი<input type="radio"  name="ger"></td>
+                        <td>საშუალო<input type="radio"  name="ger" ></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" id="add" value="დამატება" style="margin-top: 30px; margin-left: 20px;">  
+        </section>          
+    </div>
+    <div class="start"> <a href="index.html"> > </a></div>  
+</body>
+</html>
