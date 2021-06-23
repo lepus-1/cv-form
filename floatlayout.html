@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        #wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: cadetblue;
+            height: auto;
+        }
+
+        nav{
+            float: left;
+            background-color: chocolate;
+            width: 100%;
+            text-align: center;
+        }
+        .clear {
+            clear: both;
+        }
+        .news{
+            width: 100%;
+            background-color: cornflowerblue;
+            min-height: 300px;
+            height: 100%;
+            background: url(slider1.jpg) no-repeat  center center;
+            background-size: cover;
+            /* height wirdeba? */
+        }
+      
+        .tranding{
+            float: left;
+            width: 100%;
+        }
+        .tranding .content {
+            width: 100%;
+            float: left;
+        }
+        .tranding .content .card {
+            width: 30%;
+            min-width:300px;
+            background-color: darkgreen;
+            float: left;
+            margin: 20px 15px;
+        }
+
+        .world_new{
+            width: 100%;
+            float: left;
+        }
+       .world_new{
+           float: left;
+           width: 100%;
+       }
+       .world_new .content {
+           width: 100%;
+           float: left;
+       }
+       .world_new .content .left{
+           min-width:600px;
+           width:68% ;
+           background-color: darkmagenta;
+           float: left;
+           min-height: 320px;
+           margin-right: 2%;
+       }
+       .world_new .content .right{
+           min-width: 300px;
+           width:30% ;
+           background-color: darkolivegreen;
+           float: left;
+       }
+       .world_new .content .right .card {
+           margin-bottom: 20px;
+           background-color: darkorange;
+           min-height: 80px;
+       }
+
+       #footer {
+           width: 100%;
+           float: left;
+           background-color: darkred;
+           margin-top: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+     <header >
+         <nav><h1>navigation</h1></nav>
+     </header>
+     <section class="news">news</section>
+     <section class="tranding">
+         <h1>tranding</h1>
+         <div class="content">
+             <div class="card">
+                 <h2>card1</h2>
+             </div>
+             <div class="card">
+                <h2>card2</h2>
+            </div>
+            <div class="card">
+                <h2>card3</h2>
+            </div>            
+         </div>
+     </section>
+     <section class="world_new">
+         <h1>world happy</h1>
+         <div class="content">        
+      <div class="left">
+          <div class="card">
+              <p>card1</p>
+          </div>     
+      </div>
+      <div class="right">
+        <div class="card">
+            <p>card1</p>
+        </div>
+        <div class="card">
+            <p>card1</p>
+        </div>
+        <div class="card">
+            <p>card1</p>
+        </div>
+      </div>
+    </div>
+     </section>
+     <footer id="footer">
+         <h1>footer</h1>
+     </footer>
+     <div class="clear"></div>
+    </div>  
+</body>
+</html>
