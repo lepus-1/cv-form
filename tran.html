@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <head>
+        <style> 
+       
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 20px;
+  transition-duration: 2s;
+  transition-property: width;
+ 
+}
+
+.container:hover .box {
+  width: 600px;
+}
+
+.one {
+  background: #07BEB8;
+  transition-timing-function: linear;
+}
+
+.two {
+  background: #272e2e;
+  transition-timing-function: ease-in;
+}
+
+.three {
+  background: #b12505;
+  transition-timing-function: ease-out;
+}
+
+.four {
+  background: #B1F8F2;
+  transition-timing-function: ease-in-out;
+}
+.five {
+  background: #B1F8F2;
+  transition-timing-function: ease;
+}
+
+.move {
+    width: 200px;
+    background-color: darkslateblue;
+    height: 20px;
+    margin-top: 50px;
+  animation-duration: 3s;
+  animation-name: move;
+  position: absolute;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  top: 240px;
+  left:0px;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+    width:200px;
+  }
+
+  to {
+    left: 1000px;
+    
+  }
+}
+ </style>
+</head>
+<body>     
+        <div class="container">
+            <div class="box one">linear</div>
+            <div class="box two">ease-in</div>
+            <div class="box three">ease-out</div>
+            <div class="box four">ease-in-out</div>
+            <div class="box five">ease</div>
+            <div class="move"></div>
+          </div>
+        
+</body>
+</html>
+        
