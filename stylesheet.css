@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+
+
+
+
+.clear {
+	clear: both;
+}
+a {
+    color: inherit;
+}
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('../fonts/bpg-nino-mtavruli-webfont.eot');
+    src: url('../fonts/bpg-nino-mtavruli-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/bpg-nino-mtavruli-webfont.woff2') format('woff2'), 
+         url('../fonts/bpg-nino-mtavruli-webfont.woff') format('woff'), 
+         url('../fonts/bpg-nino-mtavruli-webfont.ttf') format('truetype'), 
+         url('../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular') format('svg'); 
+}
+
+/* CSS კოდი - მთავარი გვერდი */ 
+
+/* CSS GLobal Layout*/
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.center {
+    display:flex;
+    justify-content: space-between;
+    width: 85.42%;
+    margin: auto;
+}
+
+#headerWrapper {
+    width:100%;
+    background-color: bisque;
+}
+
+#sliderWrapper {
+    width: 100%;
+    background-color:cyan;
+}
+#contentWrapper .leftContent {
+    width: 66.1%;
+   
+}
+#contentWrapper .rightContent {
+    width: 32.68%;
+    background: darkkhaki;
+}
+
+/* START CSS CARD BOXES*/
+.cardBox {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.cardBox .news{
+    width: 49.07%;
+    min-width: 320px;
+    height: 180px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  
+    padding: 20px;
+   
+}
+.news a {
+    display: flex;            
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+   
+  
+}
+
+.cardBox .news .imgBlock {
+    display: inline-block;
+   width: 50%;
+    position:relative;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+.imgBlock span {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+.cardBox .news .imgBlock img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+}
+.cardBox .news h2 {
+    max-width: 180px;
+    max-height: 100px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 100%;
+}
+.news time {
+    margin-top: 20px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+
+
+/* 
+.news h2{
+    display:inline-block;
+    float: left;
+    margin-top:5px;
+    max-height: 00px; 
+    font-family: "BPG Nino Mtavruli";
+    overflow: hidden;
+    margin-top: 20px;
+}
+.news time { 
+    display:inline-block;
+    float: left;
+
+    
+    margin-top: 10px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-top: 20px;
+} *
+
+
+/*END CSS CARD BOXES*/
+/* ---------------------------------------------------------START Footer CSS ---------------------------------------------------------------------*/
+#footerWrapper {
+    width: 100%;
+}
+.bottomFooter .center{
+    flex-wrap: wrap;
+}
+#footerWrapper .leftFooter {
+    background-color: darkslategray;
+}
+#footerWrapper .bottomFooter {
+    background-color:#f8f8f8;
+    border-bottom: 2px solid #85B640;
+    padding: 30px 0;
+}
+ .contactInformation {
+	display:flex;
+	align-items: center;
+    flex-wrap: wrap;
+}
+.contactInformation li {
+	display: inline-block;
+	margin-right: 20px;
+	/* align-items: center; */
+	font-family: "BPG Arial";
+	font-size: 16px;
+}
+.contactInformation  li span {
+	display: inline-block;
+	max-width: 225px;
+}
+.icon {
+    min-width: 40px;
+    min-height:35px;
+    background-color: #85B640;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.icon.location{
+    background: #85B640 url("../images/location.svg") no-repeat center center;
+}
+.icon.mail{
+    background: #85B640 url("../images/email.svg") no-repeat center center;
+}
+.icon.tel{
+    background: #85B640 url("../images/telephone.svg") no-repeat center center;
+}
+.contactInformation  li {
+    display:flex; 
+    align-items: center; 
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: "BPG Arial";
+    font-size: 16px;
+
+}
+.contactInformation  a::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+.contactInformation span {
+    max-width: 225px;
+    display: block;
+    font-family: "BPG Arial";
+ }
+ .bottomFooter p {
+     display: flex;
+     align-items: center;
+     font-family: "BPG Nino Mtavruli";
+     font-size: 14px;
+ }
+
+
+
+/* ---------------------------------------------------------END START Footer CSS ---------------------------------------------------------------------*/
+
+.articletext {
+    display: flex;
+  flex-direction: column;
+}

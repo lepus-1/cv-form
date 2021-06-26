@@ -2,174 +2,301 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="image/x-icon" rel="icon" href="images/icon.ico">
+    <title>გარემოსდაცვითი ინფორმაციისა და განათლების ცენტრი</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>დაამატე რეზიუმე</h1>
-            <nav>
-                <ul>
-                    <li><a href="#cv">პირადი ინფორმაცია</a></li>
-                    
-                    <li><a href="#eduWork">განათლება</a></li>
-                    <li><a href="#work">სამუშაო გამოცდილება</a></li>
-                    <li><a href="#addinfo">დამატებითი ინფორმაცია</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>    
-    <div class="container" id="cv" >        
-        <form >
-            <div class="foto">
-                <label for="avatar">ატვირთე პროფილის ფოტო:</label>
-                <input type="file"
-                       id="avatar" name="avatar"
-                       accept="image/png, image/jpeg">                
-            </div>
-            <div id="info">
-                <h3>პერსონალური ინფორმაცია</h3>                                
-                    <input type="text" id="fname" placeholder="სახელი" name="perinfo" minlength="4" maxlength="10" size="20" required>                     
-                    <input type="text" id="lastName" name="perinfo"  placeholder="გვარი" minlength="4" maxlength="25" size="20" required>
-                    <input type="text" id="fatherName" name="perinfo"  placeholder="მამის სახელი" minlength="4" maxlength="25" size="20" required>
-                    <input type="number" id="pnumber" name="perinfo"  placeholder="პირადი ნომერი" minlength="11" maxlength="11" size="20" required>
+    <section id="wrapper">
+        <!--id="wrapper"-->
 
-                    <div class="dateborn">
-                        <label for="bornDate">დაბადების თარიღი</label>
-                        <input type="date" id="bornDate" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
-                    </div>
-                    <select id="gender" name="gender" >
-                        <option value="" disabled selected>აირჩიე სქესი</option>
-                        <option value="1">მდედრობითი</option>
-                        <option value="2">მამრობითი</option>
-                    </select>                 
-            </div>             
-            <section id="contact">
-                <div>           
-                    <h3>საკონტაქტო ინფორმაცია</h3>                          
-                    <input type="text" id="addres" placeholder="იურდიული მისამართი" name="contact" minlength="4" maxlength="50" size="20" required>                     
-                    <input type="text" id="addres" placeholder=" ფაქტობრივი მისამართი" name="contact" minlength="4" maxlength="50" size="20" >  
-                    <input type="tel" id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required placeholder=" მობილური: 598-11-07-61"> 
-                    <input type="email" id="email"  pattern=".+@globex\.com" size="30" required placeholder="ელ.ფოსტა">
-                 </div> 
-                 <input type="submit" id="add" value="დამატება"> 
-            </section>        
-       </form>
-        <section id="eduWork">
-            <form id="eduWorkForm">
-                <h3>განათლება</h3>
-                <div  class="school">           
-                <input type="text" id="school" placeholder="სკოლის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required>
-                <div class="edu_date">
-                    <div style="margin-right: 30px;" >
-                        
-                        <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
-                        <label for="bornDate">დაწყების თარიღი</label>
-                    </div>
-                    <div >
-                        
-                        <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
-                        <label for="bornDate">დასრულების თარიღი</label>
-                    </div>
+        <header id="headerWrapper">
+            <!--id="headerWrapper"-->
+            <div class="center">
+                <h1><a href="index.html" class="logo">გარემოსდაცვითი ინფორმაციისა და განათლების ცენტრი</a><a href="index.html">გარემოსდაცვითი ინფორმაციისა და განათლების ცენტრი</a></h1>
+                <ul class="language">
+                    <li><a href="#" class="currentLang">ქარ</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+                <div>
+                    მომავალში ძებნა <!--formaa chasasmeli-->
                 </div>
+                <ul class="socialMedia">
+                    <li><a href="#" target="_blank" class="Facebook" title="Facebook">Facebook</a></li>
+                    <li><a href="#" target="_blank" class="Youtube" title="YuoTube">Youtube</a></li>
+                    <li><a href="#" target="_blank" class="Twitter" title="Twitter">Twitter</a></li>
+                    <li><a href="#" target="_blank" class="Scribd" title="Scribd">Scribd</a></li>
+                    <li><a href="#" target="_blank" class="Linkelin" title="Linkelin">Linkelin</a></li>
+                </ul>
+                <nav class="mainMenu">
+                    <!--class="mainMenu"-->
+                    <ul>
+                        <li>
+                            <!-- li-ზე გაითვალისწინე classActive შიდებზე-->
+                            <a href="#">ჩვენ შესახებ </a>
+                            <ul>
+                                <li><a href="aboutcentre.html"> ცენტრის შესახებ</a></li>
+                                <li><a href="Structure.html">სტრუქტურა</a></li>
+                                <li><a href="Director.html">დირექტორი</a></li>
+                                <li><a href="DeputyDirector.html">დირექტორის მოადგილეები</a></li>
+                                <li><a href="Services.html">სამსახურები</a></li>
+                                <li><a href="CentreAccounts.html">ცენტრის წლიური ანგარიშები</a></li>
+                                <li><a href="Publications.html">პუბლიკაციები</a></li>
+                                <li><a href="Projects.html">პროექტები</a></li>
+                                <li><a href="Vacancy.html">ვაკანსიები</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">საზოგადოებსთან ურთიერთობა </a>
+                            <ul>
+                                <li><a href="News.html">სიახლეები</a></li>
+                                <li><a href="Announcements.html">განცხადებები</a></li>
+                                <li><a href="VideoGallery.html">ვიდეო გალერეა</a></li>
+                                <li><a href="faq.html">ხშირად დასმული კითხვები</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"> საჯარო ინფორმაცია</a>
+                            <ul>
+                                <li><a href="PublicInformation.html">საჯარო ინფორმაცია</a></li>
+                                <li><a href="PublicInformationPratic.html">საჯარო ინფორმაციის ხელმისაწვდომობის უზრუნველყოფისა და ინფორმაციის პროაქტიულ გამოქვეყენებაზე პასუხისმგებელი პირი</a></li>
+                                <li><a href="RequestPublicInformation.html">მოითხოვე საჯარო ინფორმაცია</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">დოკუმენტები </a>
+                            <ul>
+                                <li><a href="NationalReports.html">ეროვნული მოხსენებები</a></li>
+                                <li><a href="AnnualAccounts">წლიური ანგარიშები</a></li>
+                                <li><a href="ActionPlans.html">სამოქმედო გეგმები</a></li>
+                                <li><a href="Multilateralagreements.html">მრავალმხრივი ხელშეკრულებები</a></li>
+                                <li><a href="BilateralAgreements.html">ორმხრივი ხელშეკრულებები</a></li>
+                                <li><a href="Newsletters.html">საინფორმაციო ბიულეტინები</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">თემები </a>
+                            <ul>
+                                <li><a href="EnvironmentalEducation.html">გარემოსდაცვითი განათლება</a></li>
+                                <li><a href="AgrarianEducation.html">აგრარული განათლება</a></li>
+                                <li><a href="Biodiversity.html">ბიომრავალფეროვნება</a></li>
+                                <li><a href="ClimateChange.html">კლიმატის ცვლილება</a></li>
+                                <li><a href="land.html">მიწა</a></li>
+                                <li><a href="air.html">ჰაერი</a></li>
+                                <li><a href="water.html">წყალი</a></li>
+                                <li><a href="Waste.html">ნარჩენები</a></li>
+                                <li><a href="ProtectedTerritories.html">დაცული ტერიტორიები</a></li>
+                                <li><a href="RadiationSafety.html">რადიაციული უსაფრთხოება</a></li>
+                                <li><a href="EnviromentalGovernance.html">გარემოსდაცვითი მმართველობა</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"> სერვისები </a>
+                            <ul>
+                                <li><a href="CertificateCourse.html">სასერტიფიკათო კურსები</a></li>
+                                <li><a href="PublicHearings.html">საჯარო განხილვები</a></li>
+                                <li><a href="TrainingCourse.html">სასწავლო კურსები</a></li>
+                                <li><a href="LectureSeminares.html">ლექცია-სემინარები</a></li>
+                                <li><a href="EnvironmentalAgrarionCompetitions.html">გარემოსდაცვითი და აგრარული კონკურსები</a></li>
+                                <li><a href="Discusions.html">დისკუსიები</a></li>
+                                <li><a href="ExpertBase.html">ექსპერტთა ბაზა</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Organisations.html"> ორგანიზაციები </a></li>
+                        <li>
+                            <a href="#">ბმულები</a>
+                            <ul>
+                                <li><a href="MinistryAgencies.html">სამინისტრო უწყებები</a></li>
+                                <li><a href="Charity.html">ქველმოქმედება</a></li>
+                                <li><a href="DonorOrganisations.html">დონორი ორგანიზაციები</a></li>
+                                <li><a href="InformationSystems.html">საინფორმაციო სისტემები</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"> კონტაქტი</a>
+                            <ul>
+                                <li><a href="Centre.html">ცენტრი</a></li>
+                                <li><a href="Services.html">სამსახურები</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav> <!--  End of id="mainMenu" -->
             </div>
-            <input type="text" id="highSchool" placeholder="უნივერისტეტის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required>
-               
-             
-                <input type="text" id="highSchool" placeholder="ფაკულტეტის დასახელება" name="edu" minlength="4" maxlength="500" size="20" required> 
-                <select id="country" name="country" >
-                    <option value="" disabled selected>აირჩიეთ ქვეყანა</option>
-                    <option value="1">საქართველო</option>
-                    <option value="2">ინგლისი</option>
-                    <option value="3">ამერიკა</option>
-                    <option value="4">გერმანია</option>
-                    <option value="5">იტალია</option>
-                    <option value="6">უკრაინა</option>
-                    <option value="7">ეგვიპტე</option>
-                    <option value="8">იაპონია</option>
-                </select>
-                <select id="profession" name=" profession" >
-                    <option value="" disabled selected>აირჩიეთ პროფესია</option>
-                    <option value="1">ინფორმაციული ტექნოლოგიები</option>
-                    <option value="2">მათემატიკა</option>
-                    <option value="3">ფილოლოგია</option>
-                    <option value="4">ფსიქოლოგია</option>
-                    <option value="5">ბიოლოგიური</option>
-                    <option value="6">ეკონომიკა</option>
-                    <option value="7">იურდიული</option>
-                    <option value="8">გელოგია</option>
-                </select>     
-               
-               <div class="uni_date" >
-                   <div class="startdate" >
-                    <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01" >   
-                    <label for="bornDate">დაწყების თარიღი</label>
-                   </div>
-                   <div class="enddate">
-                    <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
-                    <label for="bornDate">დასრულების თარიღი</label>  
-                   </div>          
-                    <input type="submit" value="+" id="uniAdd" title="დაამატე შემდგომი უნივერსიტეტი">
-               </div>             
-               <input type="submit" id="add" value="დამატება" style="margin-top: 30px;">                
-            </form>         
+        </header><!--End of id="headerWrapper"-->
+        <section id="sliderWrapper">
+            fsdfsdf
+            <!-- id="sliderWrapper"-->
+            <div class="center">
+
+            </div>
+        </section> <!-- End of id="sliderWrapper"-->
+        <section id="contentWrapper">
+            <!-- id="contentWrapper"  -->
+            <div class="center">
+                <div class="leftContent">
+                    <!--class="leftContent"  -->
+                    <h2><a href="news.html">სიახლეები</a></h2>
+                    <div class="cardBox"> <!--START CARDBOX-->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                            <time>3 მარტი, 2021</time>
+                            <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                            <time>3 მარტი, 2021</time>
+                            <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                            
+                                <time>3 მარტი, 2021</time>
+                                <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+
+                            
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                          
+                                <time>3 მარტი, 2021</time>
+                                <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+
+                            
+                            
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                            
+                                <time>3 მარტი, 2021</time>
+                                <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+
+                            
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                    <article class="news">
+                        <!--class="news" -->
+                        <a href="simpleNews.html">
+                            <!--simpleNews-->
+
+                            <div class="imgBlock">
+                                <img src="images/1.jpg" alt="#">
+                                <span>იხილეთ სრულად</span>
+                            </div>
+                            <time>3 მარტი, 2021</time>
+                            <h2>აკვაკულტურისთვის გამოყოფილი ზონების და მართვის გეგმის საჯარო განხილვა</h2>
+                        </a><!--End of simpleNews" -->
+                    </article><!--End of class="news" -->
+                </div> <!--CARD BOX END-->
+                </div> <!-- End of class="leftContent" -->
+                <div class="leftContent rightContent">
+                    <!--class="rightContent"  -->
+                    <div class="calendar">
+                        <h2><a href="PublicHearings.html">საჯარო განხილვები</a></h2>
+
+
+                        აქ იქნება კალენდარი
+                    </div>
+                    <div class="linkLine">
+                        <div class="simpleLink">
+                            <!--class="simpleLink"-->
+                            <a href="EducationMaterials.html">
+                                <h2>საგნმანათლებლო მასალები</h2>
+                                <img src="images/2.jpg" alt="საგანმანათლებლო მასალები" />
+                            </a>
+                        </div><!--End of class="simpleLink"-->
+                        <div class="simpleLink">
+                            <!--class="simpleLink"-->
+                            <a href="informationSystems.html">
+                                <h2>საინფორმაციო სისტემები</h2>
+                                <img src="images/3.jpg" alt="საინფორმაციო სისტემები" />
+                            </a>
+                        </div><!--End of class="simpleLink"-->
+                    </div>
+                </div> <!-- End of class="rightContent" --> 
+             </div><!-- End of class="center" -->
+        </section> <!-- End of id="contentWrapper"  -->
+        <footer id="footerWrapper">
+            <!-- id="footerWrapper"  -->
+            <div class="center">
+                <div class="leftFooter">
+                    <!-- class="leftFooter" -->
+                    <h2><a href="governance.html">სამინისტროს უწყებები</a></h2>
+                </div><!-- End of class="leftFooter" -->
+                <div class="leftFooter rightFooter">
+                    <!-- class="rightFooter" -->
+                    <h2><a href="DonorOrganisation.html">დონორი ორგანიზაციები</a></h2>
+                </div><!-- End of class="rightFooter" -->
+            </div>
+
+            <section class="bottomFooter">
+                <!-- class="bottomFooter"  -->
+                <div class="center">
+                      <ul class="contactInformation"> <!--გადაწყვიტე როგორ გააკეთებ იკონებს-->
+                            <li>                                                         
+                                <div  class="icon location" ></div>
+                                <span>მარშალ გელოვანის 6, 0159, საქართველო, თბილისი.</span> 
+                            </li>
+                            <li> 
+                                <div  class="icon mail" ></div>
+                                <a href="mailto:info@eiec.gov.ge">info@eiec.gov.ge</a>
+                            </li>
+                            <li>
+                                <div class="icon tel"></div>
+                                <a href="tel:1501">1501</a>
+                            </li>
+                        </ul>
+                        <p>
     
-        </section>
-        <section  id="work">
-            <h3>სამუშაო გამოცდილება</h3>
-            <form action="#">
-                <input type="text" name="" id="" placeholder="დაწესებულება" name="work" minlength="4" maxlength="500" size="20" required>
-                <input type="text" name="" id="" placeholder="დაკავებული თანამდებობა" name="work" minlength="4" maxlength="500" size="20" required>
-                <div class="uni_date" >
-                    <div class="startdate" >
-                     <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01" >   
-                     <label for="bornDate">დაწყების თარიღი</label> 
-                    </div>
-                    <div class="enddate">
-                     <input type="date" id="" name="bornDate"  value="1985-06-01"   min="1900-01-01" max="2022-01-01">
-                     <label for="bornDate">დასრულების თარიღი</label>  
-                     </div>        
-                    <input type="submit" value="+" id="uniAdd" title="დაამატე შემდგომი სამსახური">
-                </div>
-                <input type="submit" id="add" value="დამატება" style="margin-top: 30px;">  
-            </form>
-        </section>
-        <section id="addinfo">
-            <h3>კომპიუტერული პროგრამები</h3>
-            <div class="office">
-                <label for="scales">Word </label><input type="checkbox" id="word" name="scales">
-                <label for="scales">Excel</label><input type="checkbox" id="excel" name="scales">
-                <label for="scales">PowerPoint</label><input type="checkbox" id="power" name="scales">
-            </div>
-            
-            <h3>
-                უცხო ენა 
-            </h3>
-            <div>
-                <table>
-                    <tr>
-                        <td>ინგლისური </td>
-                        <td>კარგი<input type="radio"  name="ing"></td>
-                        <td>საშუალო<input type="radio"  name="ing"></td>
-                    </tr>
-                    <tr>
-                        <td>რუსული</td>
-                        <td>კარგი<input type="radio" name="rus"></td>
-                        <td>საშუალო<input type="radio"  name="rus"></td>
-                    </tr>
-                    <tr>
-                        <td>გერმანული</td>
-                        <td>კარგი<input type="radio"  name="ger"></td>
-                        <td>საშუალო<input type="radio"  name="ger" ></td>
-                    </tr>
-                </table>
-            </div>
-            <input type="submit" id="add" value="დამატება" style="margin-top: 30px; margin-left: 20px;">  
-        </section>          
-    </div>
-    <div class="start"> <a href="index.html"> > </a></div>  
+                            &copy;  ყველა უფლება დაცული, სსიპ გარემისდაცვითი ინფორმაციისა და განათლების ცენტრი
+                        </p>
+                    </div>                 
+            </section><!-- End of class="bottomFooter"  -->
+        </footer> <!-- End of id="footerWrapper"  -->
+    </section><!--End of id="wrapper"-->
 </body>
 </html>
+    
+
